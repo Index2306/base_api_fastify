@@ -1,0 +1,7 @@
+apps:
+  - script: ./index.js
+    name: "odii-api"
+    instances: 2
+    max_memory_restart: "2G"
+    node_args: "--expose-gc --max-old-space-size=2048"
+    exec_mode: "cluster"
